@@ -1,4 +1,18 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+/* bring in normalize.css styles */
+
+:root {
+  --dark-color: #072c51;
+  --accent-color: #804F3E;
+  --second-color: #94A9CD;
+  --some-white-color: #FFF4EC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -7,6 +21,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--some-white-color);
+
 }
 
 code {
