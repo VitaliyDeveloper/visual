@@ -49,6 +49,7 @@ export const AboutMeContainer = styled.div`
 export const DescripContainer = styled.div`
   width: 500px;
   color: var(--some-white-color);
+  overflow: hidden;
 `;
 
 export const Title = styled.h1`
@@ -56,12 +57,39 @@ export const Title = styled.h1`
   text-align: end;
   font-size: 70px;
   margin-bottom: 20px;
+
+  animation: showRight 1500ms linear;
+
+  @keyframes showRight {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 `;
 
 export const SubTitle = styled.h2`
   text-align: end;
   margin-bottom: 30px;
   font-size: 30px;
+  transform-origin: 0% 0%;
+
+  animation: showUp 1000ms linear;
+
+  @keyframes showUp {
+    0% {
+      opacity: 0;
+      transform: perspective(600px) rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: perspective(600px) rotateX(0deg);
+    }
+  }
 `;
 
 export const DescripTextContainer = styled.div`
