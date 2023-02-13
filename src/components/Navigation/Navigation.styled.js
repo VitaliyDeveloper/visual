@@ -4,15 +4,17 @@ import { BsInstagram, BsWhatsapp, BsMailbox } from 'react-icons/bs';
 
 export const NavigationContainer = styled.div`
   position: absolute;
+  top: 0;
   display: grid;
   grid-template-columns: 2fr auto;
   align-items: center;
   width: 100%;
   transition: 300ms linear;
   /* background-color: var(--second-color); */
+  z-index: 1000;
 
   :hover {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.3);
   }
 `;
 
@@ -25,6 +27,8 @@ export const NavList = styled.ul`
 export const NavItem = styled.li`
   margin: 20px;
 `;
+
+export const Logo = styled.img``;
 
 export const NavLinkStyle = styled(NavLink)`
   text-decoration: none;
@@ -50,7 +54,7 @@ export const NavItemIcon = styled.li`
     /* border: 19px solid transparent;
     border-bottom: 19px solid rgba(61, 61, 61, 0.95); */
     position: absolute;
-    background-color: var(--second-color);
+    background-color: var(--accent-color);
     padding: 10px;
     color: var(--some-white-color);
     right: 50%;
@@ -60,13 +64,34 @@ export const NavItemIcon = styled.li`
     visibility: hidden;
     opacity: 0;
     transition: 300ms linear;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
   }
   :hover:before {
     visibility: visible;
     opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
   }
 `;
 
-export const InstaIcon = styled(BsInstagram)``;
-export const WhatsappIcon = styled(BsWhatsapp)``;
-export const MailIcon = styled(BsMailbox)``;
+export const InstaIcon = styled(BsInstagram)`
+  fill: var(--second-color);
+
+  :hover {
+    fill: var(--accent-color);
+  }
+`;
+export const WhatsappIcon = styled(BsWhatsapp)`
+  fill: var(--second-color);
+
+  :hover {
+    fill: var(--accent-color);
+  }
+`;
+export const MailIcon = styled(BsMailbox)`
+  fill: var(--second-color);
+
+  :hover {
+    fill: var(--accent-color);
+  }
+`;

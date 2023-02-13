@@ -3,15 +3,17 @@ import { Outlet } from 'react-router-dom';
 import { Navigation } from '../Navigation/Navigation';
 import { Footer } from 'components/Footer/Footer';
 
+import { Main } from './Layout.styled';
+
 export const Layout = () => {
   return (
     <>
       <header>
         <Navigation />
       </header>
-      <main>
+      <Main>
         <Outlet />
-      </main>
+      </Main>
       <footer>
         <Footer />
       </footer>

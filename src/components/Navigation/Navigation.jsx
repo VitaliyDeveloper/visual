@@ -5,6 +5,7 @@ import {
   NavigationContainer,
   NavList,
   NavItem,
+  Logo,
   NavItemIcon,
   NavLinkStyle,
   InstaIcon,
@@ -17,7 +18,7 @@ export const Navigation = () => {
     <NavigationContainer>
       <NavList>
         <NavItem>
-          <img src={logotype} width="80" height="80" alt="logo" />
+          <Logo src={logotype} width="50" height="50" alt="logo" />
         </NavItem>
         <NavItem>
           <NavLinkStyle to="/" end>
@@ -38,7 +39,7 @@ export const Navigation = () => {
             target="_blank"
             rel="noreferrer nooppener"
           >
-            <InstaIcon size="30" fill="#FFF4EC" />
+            <InstaIcon size="30" />
           </a>
         </NavItemIcon>
         <NavItemIcon data-info="+7-777-777-77-77">
@@ -47,7 +48,7 @@ export const Navigation = () => {
             target="_blank"
             rel="noreferrer nooppener"
           >
-            <WhatsappIcon size="30" fill="#FFF4EC" />
+            <WhatsappIcon size="30" />
           </a>
         </NavItemIcon>
         <NavItemIcon data-info="nurgul.gerassimova@mail.ru">
