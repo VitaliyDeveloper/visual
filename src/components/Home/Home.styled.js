@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import photo from '../../img/photo.jpg';
+import photoMain from '../../img/photoMain.jpg';
 
 export const HomeContainer = styled.div`
   display: flex;
@@ -7,6 +8,7 @@ export const HomeContainer = styled.div`
   width: 100%;
   height: 100%;
   color: var(--some-white-color);
+  pointer-events: none;
 `;
 
 export const PhotoContainer = styled.div`
@@ -14,6 +16,11 @@ export const PhotoContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh;
+  background: url(${photoMain});
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* background-color: var(--some-white-color); */
 `;
 
@@ -35,28 +42,37 @@ export const AboutMeContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 20px;
+  padding: 40px;
   background-color: var(--accent-color);
 `;
 
 export const DescripContainer = styled.div`
+  width: 500px;
   color: var(--some-white-color);
 `;
 
 export const Title = styled.h1`
+  /* font-family: 'Pacifico', sans-serif; */
   text-align: end;
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 20px;
 `;
 
 export const SubTitle = styled.h2`
   text-align: end;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 30px;
 `;
 
-export const Descrip = styled.p`
+export const DescripTextContainer = styled.div`
+  text-align: center;
+`;
+
+export const Descrip = styled.div`
+  /* text-align: center; */
   font-size: 18px;
   line-height: 1.2;
+  margin-bottom: 10px;
+  text-indent: 1.5em;
   text-align: start;
 `;

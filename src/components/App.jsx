@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import { Layout } from './Layout/Layout';
 import { HomePage } from 'pages/HomePage';
-import { ServisesPage } from 'pages/ServisesPage';
+import { ServicesPage } from 'pages/ServicesPage';
 import { NotFound } from './NotFound/NotFound';
 
 export const App = () => {
@@ -10,7 +10,7 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="/servises" element={<ServisesPage />} />
+        <Route path="/services" element={<ServicesPage />} />
         {/* <Route path="/gallery" element={<GalleryPage />} /> */}
         <Route path="*" element={<NotFound />} />
       </Route>

@@ -1,8 +1,10 @@
+import { NotFoundContainer, Title, Descrip } from './NotFound.styled';
+
 export const NotFound = () => {
   return (
-    <div>
-      <p>ERROR 404</p>
-      <p>not found</p>
-    </div>
+    <NotFoundContainer>
+      <Title>ERROR 404</Title>
+      <Descrip>not found</Descrip>
+    </NotFoundContainer>
   );
 };
