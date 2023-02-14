@@ -4,10 +4,11 @@ export const ServiceItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 250px;
   width: 250px;
-  height: 300px;
   margin: 20px;
   border: 2px solid var(--second-color);
+  box-shadow: -10px -10px 0 var(--second-color);
   padding: 20px;
   text-align: center;
   cursor: pointer;
@@ -16,6 +17,7 @@ export const ServiceItem = styled.li`
   :hover {
     border-color: var(--accent-color);
     scale: 1.05;
+    box-shadow: 10px 10px 0 var(--accent-color);
   }
 
   :hover .hoverColor {
@@ -24,7 +26,7 @@ export const ServiceItem = styled.li`
 `;
 
 export const Title = styled.h3`
-  font-size: 25px;
+  font-size: 20px;
   color: var(--second-color);
   text-align: center;
   transition: 300ms linear;
@@ -33,7 +35,7 @@ export const Title = styled.h3`
 
 export const Subtitle = styled.p`
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: var(--second-color);
   transition: 300ms linear;
 `;
@@ -44,11 +46,12 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   text-align: start;
+  font-size: 13px;
   line-height: 1.5;
 `;
 
 export const Price = styled.p`
-  font-size: 30px;
+  font-size: 25px;
   text-align: end;
   font-weight: bold;
   color: var(--second-color);

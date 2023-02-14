@@ -9,6 +9,9 @@ export const HomeContainer = styled.div`
   height: 100%;
   color: var(--some-white-color);
   pointer-events: none;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 `;
 
 export const PhotoContainer = styled.div`
@@ -22,6 +25,9 @@ export const PhotoContainer = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: var(--some-white-color); */
+
+  @media screen and (max-width: 480px) {
+  }
 `;
 
 export const Photo = styled.div`
@@ -53,6 +59,9 @@ export const DescripContainer = styled.div`
 `;
 
 export const Title = styled.h1`
+  @media screen and (max-width: 480px) {
+    font-size: 50px;
+  }
   /* font-family: 'Pacifico', sans-serif; */
   text-align: end;
   font-size: 70px;
@@ -94,6 +103,7 @@ export const SubTitle = styled.h2`
 
 export const DescripTextContainer = styled.div`
   text-align: center;
+  min-height: 300px;
 `;
 
 export const Descrip = styled.div`

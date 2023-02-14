@@ -1,34 +1,19 @@
-import { Menu } from 'Menu/Menu';
-import { useState } from 'react';
-
-import logotype from '../../img/NG.png';
-// import { BsInstagram, BsWhatsapp, BsMailbox } from 'react-icons/bs';
-
 import {
-  NavigationContainer,
+  MenuMob,
   NavList,
   NavItem,
-  Logo,
-  NavItemIcon,
   NavLinkStyle,
+  NavListSocial,
+  NavItemIcon,
   InstaIcon,
   WhatsappIcon,
   MailIcon,
-  BtnMenu,
-} from './Navigation.styled';
+} from './Menu.styled';
 
-export const Navigation = () => {
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
-
+export const Menu = () => {
   return (
-    <NavigationContainer>
-      <Logo src={logotype} width="50" height="50" alt="logo" />
+    <MenuMob>
       <NavList>
-        <NavItem></NavItem>
         <NavItem>
           <NavLinkStyle to="/" end>
             Главная
@@ -41,7 +26,7 @@ export const Navigation = () => {
           <NavLinkStyle to="/gallery">Галерея</NavLinkStyle>
         </NavItem>
       </NavList>
-      <NavList>
+      <NavListSocial>
         <NavItemIcon data-info="@gerasimova.nurgul">
           <a
             href="https://instagram.com/gerasimova.nurgul?igshid=YmMyMTA2M2Y="
@@ -69,9 +54,7 @@ export const Navigation = () => {
             <MailIcon size="30" fill="#FFF4EC" />
           </a>
         </NavItemIcon>
-      </NavList>
-      <BtnMenu onClick={handleClick}></BtnMenu>
-      {active && <Menu />}
-    </NavigationContainer>
+      </NavListSocial>
+    </MenuMob>
   );
 };

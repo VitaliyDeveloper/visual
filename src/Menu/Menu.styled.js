@@ -2,44 +2,27 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { BsInstagram, BsWhatsapp, BsMailbox } from 'react-icons/bs';
 
-export const NavigationContainer = styled.div`
-  /* position: absolute;
-  top: 0; */
-  display: grid;
-  grid-template-columns: 2fr auto;
-  align-items: center;
-  width: 100%;
-  transition: 300ms linear;
-  /* background-color: var(--second-color); */
-  z-index: 1000;
-
-  :hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
+export const MenuMob = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
 `;
-
 export const NavList = styled.ul`
   list-style: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
-
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
 `;
 
 export const NavItem = styled.li`
   margin: 20px;
 `;
 
-export const Logo = styled.img``;
-
 export const NavLinkStyle = styled(NavLink)`
   text-decoration: none;
   font-size: 20px;
   color: var(--second-color);
-  /* color: var(--some-white-color); */
-  /* text-shadow: 0 0 10px #000; */
 
   &:hover,
   :focus {
@@ -48,6 +31,11 @@ export const NavLinkStyle = styled(NavLink)`
   &.active {
     color: var(--accent-color);
   }
+`;
+
+export const NavListSocial = styled.ul`
+  display: flex;
+  list-style: none;
 `;
 
 export const NavItemIcon = styled.li`
@@ -98,12 +86,4 @@ export const MailIcon = styled(BsMailbox)`
   :hover {
     fill: var(--accent-color);
   }
-`;
-
-////////////////////////////////////////////
-export const BtnMenu = styled.button`
-  width: 50px;
-  height: 50px;
-  background-color: #000;
-  cursor: pointer;
 `;
