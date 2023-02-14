@@ -15,6 +15,7 @@ import {
   WhatsappIcon,
   MailIcon,
   BtnMenu,
+  Line,
 } from './Navigation.styled';
 
 export const Navigation = () => {
@@ -70,7 +71,11 @@ export const Navigation = () => {
           </a>
         </NavItemIcon>
       </NavList>
-      <BtnMenu onClick={handleClick}></BtnMenu>
+      <BtnMenu onClick={handleClick}>
+        <Line></Line>
+        <Line></Line>
+        <Line></Line>
+      </BtnMenu>
       {active && <Menu />}
     </NavigationContainer>
   );

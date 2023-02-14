@@ -36,7 +36,9 @@ export const NavItem = styled.li`
   margin: 20px;
 `;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  margin: 5px 20px;
+`;
 
 export const NavLinkStyle = styled(NavLink)`
   text-decoration: none;
@@ -74,6 +76,7 @@ export const NavItemIcon = styled.li`
     transition: 300ms linear;
     transform: perspective(600px) rotateX(-90deg);
     transform-origin: 0% 0%;
+    z-index: 100;
   }
   :hover:before {
     visibility: visible;
@@ -105,14 +108,27 @@ export const MailIcon = styled(BsMailbox)`
 `;
 
 ////////////////////////////////////////////
-export const BtnMenu = styled.button`
+export const BtnMenu = styled.div`
   width: 50px;
   height: 50px;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
   border: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 
   @media screen and (min-width: 770px) {
     display: none;
   }
+`;
+
+export const Line = styled.span`
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+  margin: 2px;
+  background-color: var(--accent-color);
 `;
