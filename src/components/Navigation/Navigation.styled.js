@@ -6,12 +6,16 @@ export const NavigationContainer = styled.div`
   /* position: absolute;
   top: 0; */
   display: grid;
-  grid-template-columns: 2fr auto;
+  grid-template-columns: 55px 2fr auto;
   align-items: center;
   width: 100%;
   transition: 300ms linear;
   /* background-color: var(--second-color); */
   z-index: 1000;
+
+  @media screen and (max-width: 769px) {
+    grid-template-columns: 2fr auto;
+  }
 
   :hover {
     background: rgba(255, 255, 255, 0.3);
@@ -23,7 +27,7 @@ export const NavList = styled.ul`
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 769px) {
     display: none;
   }
 `;
@@ -107,4 +111,8 @@ export const BtnMenu = styled.button`
   background-color: var(--accent-color);
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 770px) {
+    display: none;
+  }
 `;
