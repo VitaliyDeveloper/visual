@@ -14,11 +14,31 @@ export const NavigationContainer = styled.div`
   z-index: 1000;
 
   @media screen and (max-width: 769px) {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 0.5fr 1fr auto;
   }
 
   :hover {
     background: rgba(255, 255, 255, 0.3);
+  }
+`;
+
+export const MobName = styled.p`
+  color: var(--second-color);
+  font-size: 18px;
+  display: none;
+  @media screen and (max-width: 769px) {
+    display: flex;
+  }
+
+  animation: show 1000ms linear;
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `;
 

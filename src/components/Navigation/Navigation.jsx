@@ -1,4 +1,4 @@
-import { Menu } from 'Menu/Menu';
+import { Menu } from 'components/Menu/Menu';
 import { useState } from 'react';
 
 import logotype from '../../img/NG.png';
@@ -6,6 +6,7 @@ import logotype from '../../img/NG.png';
 
 import {
   NavigationContainer,
+  MobName,
   NavList,
   NavItem,
   Logo,
@@ -28,6 +29,7 @@ export const Navigation = () => {
   return (
     <NavigationContainer>
       <Logo src={logotype} width="50" height="50" alt="logo" />
+      <MobName>Нургуль Герасимова</MobName>
       <NavList>
         <NavItem></NavItem>
         <NavItem>

@@ -9,7 +9,8 @@ export const HomeContainer = styled.div`
   height: 100%;
   color: var(--some-white-color);
   pointer-events: none;
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 769px) {
     flex-direction: column;
   }
 `;
@@ -26,21 +27,22 @@ export const PhotoContainer = styled.div`
   background-repeat: no-repeat;
   /* background-color: var(--some-white-color); */
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 769px) {
+    height: 50vh;
   }
 `;
 
-export const Photo = styled.div`
-  background: url(${photo});
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 500px;
-  margin: 50px;
-  border-radius: 20px;
-  box-shadow: -5px -5px 20px var(--accent-color);
-`;
+// export const Photo = styled.div`
+//   background: url(${photo});
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   width: 300px;
+//   height: 500px;
+//   margin: 50px;
+//   border-radius: 20px;
+//   box-shadow: -5px -5px 20px var(--accent-color);
+// `;
 
 export const AboutMeContainer = styled.div`
   display: flex;
@@ -50,6 +52,10 @@ export const AboutMeContainer = styled.div`
   height: 100vh;
   padding: 40px;
   background-color: var(--accent-color);
+  @media screen and (max-width: 769px) {
+    height: 100vh;
+    padding: 20px;
+  }
 `;
 
 export const DescripContainer = styled.div`
