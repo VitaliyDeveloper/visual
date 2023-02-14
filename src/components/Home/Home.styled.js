@@ -10,6 +10,7 @@ export const HomeContainer = styled.div`
   color: var(--some-white-color);
   pointer-events: none;
 
+  overflow-y: auto;
   @media screen and (max-width: 769px) {
     flex-direction: column;
   }
@@ -49,7 +50,6 @@ export const AboutMeContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
   padding: 40px;
   background-color: var(--second-color);
   @media screen and (max-width: 769px) {

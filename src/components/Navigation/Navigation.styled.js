@@ -25,6 +25,7 @@ export const NavigationContainer = styled.div`
 export const MobName = styled.p`
   color: var(--second-color);
   font-size: 18px;
+  font-weight: bold;
   display: none;
   @media screen and (max-width: 769px) {
     display: flex;
@@ -64,6 +65,7 @@ export const Logo = styled.img`
 export const NavLinkStyle = styled(NavLink)`
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
   color: var(--second-color);
   /* color: var(--some-white-color); */
   /* text-shadow: 0 0 10px #000; */
