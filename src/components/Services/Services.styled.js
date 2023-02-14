@@ -6,7 +6,7 @@ export const ServicesContainer = styled.div`
   justify-content: center;
   padding: 30px;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 `;
 
 export const ServiceList = styled.ul`

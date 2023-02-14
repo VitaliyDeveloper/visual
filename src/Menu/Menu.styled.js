@@ -5,12 +5,15 @@ import { BsInstagram, BsWhatsapp, BsMailbox } from 'react-icons/bs';
 export const MenuMob = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 300px;
 `;
 export const NavList = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 `;

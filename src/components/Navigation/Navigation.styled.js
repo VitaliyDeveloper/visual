@@ -14,7 +14,7 @@ export const NavigationContainer = styled.div`
   z-index: 1000;
 
   @media screen and (max-width: 769px) {
-    grid-template-columns: 2fr auto;
+    grid-template-columns: 1fr auto;
   }
 
   :hover {
