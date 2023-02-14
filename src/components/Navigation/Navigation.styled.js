@@ -46,6 +46,7 @@ export const NavList = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
+  margin-right: 20px;
 
   @media screen and (max-width: 769px) {
     display: none;
