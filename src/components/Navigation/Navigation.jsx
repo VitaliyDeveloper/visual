@@ -26,8 +26,15 @@ export const Navigation = () => {
     setActive(!active);
   };
 
+  const handleClose = e => {
+    if (e.currentTarget) {
+      setActive(!active);
+    }
+    console.log(e.target);
+  };
+
   return (
-    <NavigationContainer>
+    <NavigationContainer onClick={handleClose}>
       <Logo src={logotype} width="50" height="50" alt="logo" />
       <MobName>Нургуль Герасимова</MobName>
       <NavList>
