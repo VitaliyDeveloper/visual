@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import photo from '../../img/photo.jpg';
+// import photo from '../../img/photo.jpg';
 import photoMain from '../../img/photoMain.jpg';
 
 export const HomeContainer = styled.div`
