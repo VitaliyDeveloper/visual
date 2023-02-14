@@ -7,7 +7,9 @@
 
 :root {
   --dark-color: #072c51;
-  --accent-color: #804F3E;
+  /* --accent-color: #804F3E; */
+  --accent-color: #072c51;
+
   --second-color: #94A9CD;
   --some-white-color: #FFF4EC;
 }

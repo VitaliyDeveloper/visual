@@ -144,6 +144,10 @@ export const BtnMenu = styled.div`
   @media screen and (min-width: 770px) {
     display: none;
   }
+
+  :hover .hover {
+    background-color: var(--accent-color);
+  }
 `;
 
 export const Line = styled.span`
@@ -151,5 +155,5 @@ export const Line = styled.span`
   height: 5px;
   border-radius: 10px;
   margin: 2px;
-  background-color: var(--accent-color);
+  background-color: var(--second-color);
 `;

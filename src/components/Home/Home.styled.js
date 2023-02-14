@@ -51,7 +51,7 @@ export const AboutMeContainer = styled.div`
   width: 100%;
   height: 100vh;
   padding: 40px;
-  background-color: var(--accent-color);
+  background-color: var(--second-color);
   @media screen and (max-width: 769px) {
     height: 100vh;
     padding: 20px;

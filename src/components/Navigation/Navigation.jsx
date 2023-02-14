@@ -81,9 +81,9 @@ export const Navigation = () => {
         </NavItemIcon>
       </NavList>
       <BtnMenu onClick={handleClick}>
-        <Line></Line>
-        <Line></Line>
-        <Line></Line>
+        <Line className="hover"></Line>
+        <Line className="hover"></Line>
+        <Line className="hover"></Line>
       </BtnMenu>
       {active && <Menu handleClick={handleClick} />}
     </NavigationContainer>
