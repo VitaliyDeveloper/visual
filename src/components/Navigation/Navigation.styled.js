@@ -104,6 +104,7 @@ export const MailIcon = styled(BsMailbox)`
 export const BtnMenu = styled.button`
   width: 50px;
   height: 50px;
-  background-color: #000;
+  background-color: var(--accent-color);
+  border: none;
   cursor: pointer;
 `;
