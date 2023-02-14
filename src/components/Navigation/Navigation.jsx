@@ -78,7 +78,7 @@ export const Navigation = () => {
         <Line></Line>
         <Line></Line>
       </BtnMenu>
-      {active && <Menu />}
+      {active && <Menu handleClick={handleClick} />}
     </NavigationContainer>
   );
 };

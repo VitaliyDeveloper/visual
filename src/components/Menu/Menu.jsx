@@ -10,20 +10,24 @@ import {
   MailIcon,
 } from './Menu.styled';
 
-export const Menu = () => {
+export const Menu = handleClick => {
   return (
     <MenuMob>
       <NavList>
         <NavItem>
-          <NavLinkStyle to="/" end>
+          <NavLinkStyle onClick={handleClick} to="/" end>
             Главная
           </NavLinkStyle>
         </NavItem>
         <NavItem>
-          <NavLinkStyle to="/services">Услуги</NavLinkStyle>
+          <NavLinkStyle onClick={handleClick} to="/services">
+            Услуги
+          </NavLinkStyle>
         </NavItem>
         <NavItem>
-          <NavLinkStyle to="/gallery">Галерея</NavLinkStyle>
+          <NavLinkStyle onClick={handleClick} to="/gallery">
+            Галерея
+          </NavLinkStyle>
         </NavItem>
       </NavList>
       <NavListSocial>
