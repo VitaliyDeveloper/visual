@@ -1,7 +1,12 @@
-export const Gallery = () => {
+import { GalleryList } from './Gallery.styled';
+import { GalleryItem } from '../GalleryItem/GalleryItem';
+
+export const Gallery = ({ photos }) => {
   return (
-    <ul>
-      <li>df</li>
-    </ul>
+    <GalleryList>
+      {photos.map(photo => (
+        <GalleryItem photo={photo} />
+      ))}
+    </GalleryList>
   );
 };
