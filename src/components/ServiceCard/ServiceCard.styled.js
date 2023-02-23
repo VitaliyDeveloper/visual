@@ -1,23 +1,27 @@
 import styled from 'styled-components';
 
 export const ServiceItem = styled.li`
+  /* border: 2px solid var(--second-color); */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 250px;
   width: 250px;
   margin: 20px;
-  border: 2px solid var(--second-color);
-  box-shadow: -10px -10px 0 var(--second-color);
+  border: none;
+  box-shadow: -5px -5px 10px var(--second-color);
   padding: 20px;
   text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+
   cursor: pointer;
   transition: 300ms linear;
 
   :hover {
     border-color: var(--accent-color);
     scale: 1.05;
-    box-shadow: 10px 10px 0 var(--accent-color);
+    box-shadow: 5px 5px 10px var(--accent-color);
   }
 
   :hover .hoverColor {

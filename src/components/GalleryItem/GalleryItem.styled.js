@@ -5,16 +5,20 @@ export const GalleryItemStyle = styled.li`
   height: 300px;
   margin: 20px;
   transition: 250ms linear;
-  box-shadow: -10px -10px 0 var(--second-color);
+  border: none;
+  border-radius: 20px;
+  box-shadow: -5px -5px 10px var(--second-color);
+
   cursor: pointer;
 
   :hover {
-    box-shadow: 10px 10px 0 var(--accent-color);
+    box-shadow: 5px 5px 10px var(--accent-color);
     scale: 1.1;
   }
 `;
 
 export const Photo = styled.img`
+  border-radius: 20px;
   min-width: 300px;
   min-height: 300px;
 `;
