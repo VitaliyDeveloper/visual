@@ -15,6 +15,9 @@ export const GalleryItemStyle = styled.li`
     box-shadow: 5px 5px 10px var(--accent-color);
     scale: 1.1;
   }
+
+  animation: fadeInUp;
+  animation-duration: 1.5s;
 `;
 
 export const Photo = styled.img`

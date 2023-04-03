@@ -70,9 +70,9 @@ export const Navigation = () => {
             <WhatsappIcon size="30" />
           </a>
         </NavItemIcon>
-        <NavItemIcon data-info="nurgul.gerassimova@mail.ru">
+        <NavItemIcon data-info="gerassimovan@mail.ru">
           <a
-            href="mailto:nurgul.gerassimova@mail.ru"
+            href="mailto:gerassimovan@mail.ru"
             target="_blank"
             rel="noreferrer nooppener"
           >

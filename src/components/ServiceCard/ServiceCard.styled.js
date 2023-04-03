@@ -5,17 +5,19 @@ export const ServiceItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 250px;
-  width: 250px;
+  height: 350px;
+  width: 280px;
   margin: 20px;
   border: none;
   box-shadow: -5px -5px 10px var(--second-color);
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   background-color: #fff;
   border-radius: 20px;
 
   cursor: pointer;
+  animation: fadeInUp;
+  animation-duration: 1.5s;
   transition: 300ms linear;
 
   :hover {
@@ -30,7 +32,7 @@ export const ServiceItem = styled.li`
 `;
 
 export const Title = styled.h3`
-  font-size: 20px;
+  font-size: 25px;
   color: var(--second-color);
   text-align: center;
   transition: 300ms linear;
@@ -50,12 +52,12 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   text-align: start;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.5;
 `;
 
 export const Price = styled.p`
-  font-size: 25px;
+  font-size: 30px;
   text-align: end;
   font-weight: bold;
   color: var(--second-color);

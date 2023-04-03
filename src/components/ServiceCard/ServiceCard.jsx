@@ -1,11 +1,21 @@
-import { ServiceItem, Title, List, Item, Price } from './ServiceCard.styled';
+import 'animate.css';
+import {
+  ServiceItem,
+  Title,
+  Subtitle,
+  List,
+  Item,
+  Price,
+} from './ServiceCard.styled';
 
 export const ServiceCard = ({ offer }) => {
   return (
     <ServiceItem key={offer.id}>
       <div>
         <Title className="hoverColor">{offer.title}</Title>
-        {offer.subtitle && <p className="hoverColor">{offer.subtitle}</p>}
+        {offer.subtitle && (
+          <Subtitle className="hoverColor">{offer.subtitle}</Subtitle>
+        )}
       </div>
       <List>
         {offer.task1 && <Item>{offer.task1}</Item>}
